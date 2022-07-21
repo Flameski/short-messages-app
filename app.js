@@ -8,7 +8,7 @@ const posts = require('./routes/posts');
 const port = process.env.PORT || 3001;
 
 // static assets
-app.use(express.static(path.join(__dirname, 'assets')));
+app.use(express.static('./assets'));
 // parse form data
 app.use(express.urlencoded({ extended: false }));
 // parse json
