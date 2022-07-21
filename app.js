@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const cors = require('cors');
-const path = require('path');
+require('dotenv').config();
 
 const posts = require('./routes/posts');
 
