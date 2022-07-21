@@ -1,13 +1,14 @@
 const express = require('express');
 const app = express();
 const cors = require('cors');
+const path = require('path');
 
 const posts = require('./routes/posts');
 
 const port = process.env.PORT || 3001;
 
 // static assets
-app.use(express.static('./assets'));
+app.use(express.static(path.join(__dirname, 'assets')));
 // parse form data
 app.use(express.urlencoded({ extended: false }));
 // parse json
