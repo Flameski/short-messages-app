@@ -6,10 +6,7 @@ const posts = [
     author: {
       name: 'Author',
       title: 'Title',
-      photo: path.join(
-        process.env.APP_MODE === 'production' ? process.env.API_URI : '',
-        'avatar1.png'
-      ),
+      photo: path.join(process.env.API_URI, 'avatar1.png'),
     },
     text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae nisi minima, enim ab quia omnis nemo eum debitis impedit iure tempora doloribus distinctio cupiditate excepturi veniam rem est optio ipsum.',
     likes: 0,
