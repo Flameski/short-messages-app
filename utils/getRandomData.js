@@ -19,6 +19,9 @@ const getRandomRata = () => {
       },
       text: getRandomText(50, 20),
       likes: Math.floor(Math.random() * 10),
+      published: new Date(
+        Date.now() - Math.floor(Math.random() * 4) * 100000000
+      ).toISOString(),
     };
     randomData.push(dataPiece);
   }
